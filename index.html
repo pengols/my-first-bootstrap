@@ -7,6 +7,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 	</script>
+	<script src="https://kit.fontawesome.com/594c418e4a.js" crossorigin="anonymous"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,23 +15,37 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
-        <a href="/" class="navbar-brand">Whiskey Drop</a>
-        <ul class="navbar-nav mr-auto">
-            <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
-        </ul>
-        <p class="navbar-text my-auto mr-2"><i>Great Whiskey delivered to your door!</i></p>
-        <a href="/login">Sign In / Sign Up</a>
-   </nav>
-	<article class="container">
+	<nav class="navbar navbar-light bg-light navbar-expand-sm">
+		<a href="/" class="navbar-brand">Whiskey Drop</a>
+		<ul class="navbar-nav mr-auto">
+			<li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+			<li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+			<li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/login">Sign In / Sign Up</a></li>
+
+		</ul>
+		<div class="d-none d-md-block">
+			<p class="navbar-text my-auto mr-2"><i>Great Whiskey delivered to your door!</i></p>
+			<a href="/login">Sign In / Sign Up</a>
+		</div>
+	</nav>
+	<article class="container mt-3">
+		<div class="row d-none d-sm-block">
+			<div class="col-12">
+				<div class="alert alert-warning">
+					<strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6 <a
+						href="">See here for more details</a>
+				</div>
+			</div>
+		</div>
 		<!--Callout -->
 		<div class="row">
 			<div class="col-12">
-				<section class="callout">
+				<section class="callout jumbotron text-center">
 					<h1>The finest whiskeys delivered to your doorstep</h1>
 					<p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-						<s>£19.99</s><mark><strong>The first one is free!</strong></mark></p>
+						<s class="d-none d-sm-inline">£19.99</s>
+						<span class="d-inline d-sm-none"><br></span>
+						<strong><mark>The first one is free!</strong></mark></p>
 					<button class="btn btn-success btn-lg">Sign
             Up!</button>
 					<p class="text-muted">
@@ -44,38 +59,52 @@
 		<!--quotes -->
 		<section class="quotes">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 my-5">
 					<h2 class="text-uppercase">Quotes:</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12 col-md-6">
-					<blockquote class="blockquote">
-						<p>I've been introduced to 10 international whiskeys I never knew about.</p>
-						<p>- Jim Durkin</p>
-					</blockquote>
-				</div>
-				<div class="col-12 col-md-6">
-					<blockquote class="blockquote">
-						<p>I haven't been sober for months!</p>
-						<p>- Rob Brown</p>
-					</blockquote>
-				</div>
-			</div>
+					<div class="media">
+						<div class="d-none d-sm-block">
+							<img src="images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
+                        </div>
+							<div class="media-body">
+								<blockquote class="blockquote">
+									<p>I've been introduced to 10 international whiskeys I never knew about.</p>
+									<p>- Jim Durkin</p>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="media">
+							<div class="d-none d-sm-block">
+								<img src="images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
+                            </div>
+								<div class="media-body">
+									<blockquote class="blockquote">
+										<p>I haven't been sober for months!</p>
+										<p>- Rob Brown</p>
+									</blockquote>
+								</div>
+							</div>
+						</div>
+					</div>
 		</section>
 		<!-- /.quotes -->
 
 		<!--features -->
 		<section class="features">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 my-5">
 					<h2 class="text-uppercase">Features:</h2>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="feature">
-						<h3>Feature 1</h3>
+						<h3><i class="fas fa-gift d-none d-sm-block"></i> Feature 1 <span class="badge badge-success">NEW!</h3>
 						<p>sdkjfhkjshfjsdfiojwdlkjs sdfu sidf lksdjflksdfj oisusdiufis
 							dhfklsjldafoiusoidfsdfjlsidjlksjdcoisjd
 							ofsodif sod</p>
@@ -84,7 +113,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="feature">
-						<h3>Feature 2</h3>
+						<h3><i class="far fa-credit-card d-none d-sm-block"></i> Feature 2</h3>
 						<p>sdkjfhkjshfjsdfiojwdlkjs sdfu sidf lksdjflksdfj oisusdiufis
 							dhfklsjldafoiusoidfsdfjlsidjlksjdcoisjd
 							ofsodif sod</p>
@@ -93,7 +122,7 @@
 				</div>
 				<div class="col-12 d-md-none d-lg-block col-lg-4">
 					<div class="feature">
-						<h3>Feature 3</h3>
+						<h3><i class="fas fa-wine-bottle d-none d-sm-block"></i> Feature 3</h3>
 						<p>sdkjfhkjshfjsdfiojwdlkjs sdfu sidf lksdjflksdfj oisusdiufis
 							dhfklsjldafoiusoidfsdfjlsidjlksjdcoisjd
 							ofsodif sod</p>
@@ -106,7 +135,7 @@
 			<!--monthlys-->
 			<table class="table">
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12 my-5">
 						<h2 class="text-uppercase">Monthly Favourites:</h2>
 					</div>
 				</div>
